@@ -43,7 +43,67 @@
     <p>Popup menus list Operators which can be executed by selecting with LMB or using the generated shortcut indicated by the underlined character of the operator name. All menu entries show any relevant shortcut keys, which can be executed without opening the menu.</p>
     <p>All popup menus can be searched by pressing Spacebar and typing the name of the operator in the menu. If a popup menu has “Search” as one of the items, the menu can be searched without having to press Spacebar first.</p>
     <p>All popup menus of an editor can be searched using the Menu Search feature.</p>
+    <h2>Collapsing Menus</h2>
+    <p>Sometimes it’s helpful to gain some extra horizontal space in the header by collapsing menus. This can be accessed from the header context menu: click RMB on the header and uncheck the Show Menus checkbox.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_controls_buttons_menu_header_uncheck_show_menus_checkbox.png">
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_controls_buttons_menus_header-menu-collapsed.png">
+    <h2>Select Menus</h2>
+    <p>The 3D Viewport Mode Select menu.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_controls_buttons_menus_select-menu.png">
+    <p>A Select Menu (or “selector”) allows you to choose from a predefined list of options. It appears as a text label and/or icon with a down arrow on the right.</p>
+    <p>Click with LMB to open the menu and choose an option. The selected option will then appear inside the button. You can also cycle through options without opening the menu by scrolling on top of the button with Ctrl-Wheel.</p>
+    <h2>Expanded View</h2>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_controls_buttons_buttons_radio.png">
+    <p>Some select menus use an expanded layout to show all available options at once. In this view, the active option is highlighted with a colored background.</p>
+    <p>In certain cases, you can select multiple options by holding Shift and clicking with LMB.</p>
+    <h2>Popover Menus</h2>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_controls_buttons_menus_popup-menu.png">
+    <p>Popover menus are similar to Select Menus, but can show more varied content such as a title, buttons, sliders, etc.</p>
+    <h2>Context Menu</h2>
+    <p>Context menus are pop-ups that can be opened with RMB. In most editors, it’s also possible to use the Menu key. The contents of the menu depend on the location of the mouse pointer.</p>
+    <p>When invoked in an editor, the menu contains a list of operators sensitive to the editor’s mode. When invoked over buttons and properties, common options include:</p>
+    <p>Single
+    Apply the change to a single value of a set (e.g. only the X coordinate of an object’s Location).</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+All
+Apply the change to all values in a set (e.g. all coordinates of an object’s Location).
+
+Reset to Default Value(s) Backspace
+Replaces the current value by the default.
+
+Copy Data Path Shift-Ctrl-C
+Copies the Python property data path, relative to the data-block. Useful for Python scripting.
+
+Copy Full Data Path Shift-Ctrl-Alt-C
+Copies the full Python property data path including any needed context information.
+
+Copy As New Driver
+Creates a new driver using this property as input, and copies it to the clipboard. Use Paste Driver to add the driver to a different property, or Paste Driver Variables to extend an existing driver with a new input variable.
+
+Copy To Selected
+Copies the property value to the selected object’s corresponding property. A use case is if the Properties context is pinned.
+
+Assign Shortcut
+Lets you define a keyboard or mouse shortcut for an operation. To define the shortcut you must first move the mouse cursor over the button that pops up. When “Press a key” appears you must press and/or click the desired shortcut. Press Esc to cancel.
