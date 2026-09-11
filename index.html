@@ -105,7 +105,7 @@
     <p>There can only be one active tool per Workspace and mode. This tool is remembered: if you’re in Edit Mode and have the Extrude tool selected, then switch to Object Mode (which has no Extrude tool) and back to Edit Mode, the Extrude tool will still be active.</p>
     <p>Most tools are controlled using just LMB, though some also have modifier keys (shown in the Status Bar while using the tool). This can all be customized in the Keymap Preferences.</p>
     <p>Some tools define gizmos (Shear and Spin for example) to help control them.</p>
-    <h2>Toolbar</h2>
+    <p>Toolbar</p>
     <img src="https://docs.blender.org/manual/en/latest/_images/interface_tool-system_buttons-popup.png">
     <p>The Toolbar contains buttons for the various tools. Buttons with a small triangle in their bottom right corner are tool groups which can be opened by holding LMB on them for a moment (or dragging LMB to open them instantly).</p>
     <p>Hovering your cursor over a tool for a short time will show its name, while hovering longer will show the full tooltip.</p>
@@ -127,12 +127,134 @@
     <p>The Tool ‣ Active Tool panel in the Sidebar N.</p>
     <p>The Active Tool tab in the Properties editor.</p>
     <p>The Tool Settings region below the area header.</p>
+    <h2>Keymap</h2>
+    <p>Conventions Used in This Manual</p>
+    <p>Keyboard</p>
+    <p>Hotkeys are shown in this manual as they appear on a keyboard. For example:</p>
+    <p>G: The “G” key by itself (as though you were typing a lowercase “g”).</p>
+    <p>Shift, Ctrl, Alt: Modifier keys.</p>
+    <p>Ctrl-W, Shift-Alt-A: Keys pressed simultaneously.</p>
+    <p>0 to 9: The number keys on the row above the letters.</p>
+    <p>Numpad0 to Numpad9, NumpadPlus: The keys on the separate numeric keypad.</p>
+    <p>Other keys are referred to by name, such as Esc, Tab, and F1 through F12. Arrow keys are written as Left, Right, and so on.</p>
+    <p>Mouse</p>
+    <p>Mouse buttons and wheel actions are referred to as:</p>
+    <p>LMB: Left Mouse Button</p>
+    <p>RMB: Right Mouse Button</p>
+    <p>MMB: Middle Mouse Button</p>
+    <p>Wheel, WheelUp, WheelDown: Scrolling the mouse wheel.</p>
+    <p>Built-in Keymaps</p>
+    <p>Blender provides two default keymaps:</p>
+    <p>Blender</p>
+    <p>The default keymap, used throughout this manual.</p>
+    <p>Industry Compatible</p>
+    <p>A keymap that more closely matches the shortcuts of other 3D editing applications.</p>
+    <p>Customizing</p>
+    <p>You can customize keyboard and mouse shortcuts in the Preferences.</p>
+    <h2>Workspace</h2>
+    <p>Workspaces are essentially predefined window layouts. Each Workspace consists of a set of Areas containing Editors, and is geared towards a specific task such as modeling, animating, or scripting. You’ll typically switch between multiple Workspaces while working on a project.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_workspaces_screen.png">
+    <p>Controls</p>
+    <p>Tabs</p>
+    <p>Click on the tabs to switch between workspaces. Double-click a tab to rename the workspace.</p>
+    <p>Add Workspace</p>
+    <p>Adds a new workspace from a predefined template (e.g. Modeling, Sculpting, Compositing).</p>
+    <p>Context Menu (RMB)</p>
+    <p>Duplicate</p>
+    <p>Makes a copy of the selected workspace, including its screen layout and editors.</p>
+    <p>Delete</p>
+    <p>Deletes the selected workspace. If it is the last workspace, it cannot be removed.</p>
+    <p>Reorder to Front/Back</p>
+    <p>Moves the workspace tab to the first (front) or last (back) position in the tab list.</p>
+    <p>Previous Workspace Ctrl-PageUp</p>
+    <p>Activates the workspace immediately to the left of the current one.</p>
+    <p>Next Workspace Ctrl-PageDown</p>
+    <p>Activates the workspace immediately to the right of the current one.</p>
+    <p>Delete Other Workspaces</p>
+    <p>Removes all workspaces except the one that was right-clicked on.</p>
+    <p>Default Workspaces</p>
+    <p>Blender’s default startup shows the “Layout” workspace in the main area. This workspace is a general workspace to preview your scene and contains the following Editors:</p>
+    <p>3D Viewport on top left.</p>
+    <p>Outliner on top right.</p>
+    <p>Properties on bottom right.</p>
+    <p>Timeline on bottom left.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_workspaces_layout.png">
+    <p>Blender also has several other workspaces added by default:</p>
+    <p>Modeling:</p>
+    <p>For modification of geometry by modeling tools.</p>
+    <p>Sculpting:</p>
+    <p>For modification of meshes by sculpting tools.</p>
+    <p>UV Editing:</p>
+    <p>For mapping of image texture coordinates to 3D surfaces.</p>
+    <p>Texture Paint:</p>
+    <p>For coloring image textures in the 3D Viewport.</p>
+    <p>Shading:</p>
+    <p>For specifying material properties for rendering.</p>
+    <p>Animation:</p>
+    <p>For making properties of objects dependent on time.</p>
+    <p>Rendering:</p>
+    <p>For viewing and analyzing rendering results.</p>
+    <p>Compositing:</p>
+    <p>For combining and post-processing of images and rendering information.</p>
+    <p>Geometry Nodes:</p>
+    <p>For procedural modeling using Geometry Nodes.</p>
+    <p>Scripting:</p>
+    <p>For interacting with Blender’s Python API and writing scripts.</p>
+    <p>Additional Workspaces</p>
+    <p>Blender has a couple additional Workspaces to choose from when adding a new Workspace:</p>
+    <p>2D Animation:</p>
+    <p>General workspace to work with Grease Pencil.</p>
+    <p>2D Full Canvas:</p>
+    <p>Similar to “2D Animation” but contains a larger canvas.</p>
+    <p>VFX</p>
+    <p>Masking:</p>
+    <p>For creating 2D masks for compositing or video editing.</p>
+    <p>Motion Tracking:</p>
+    <p>For calculating camera motion and stabilizing video footage.</p>
+    <p>Video Editing:</p>
+    <p>For sequencing together media into one video.</p>
+    <h2>Areas</h2>
+    <p>The Blender window is divided into a number of rectangles called Areas. Areas reserve screen space for Editors, such as the 3D Viewport or the Outliner. Each editor offers a specific piece of functionality.</p>
+    <p>Areas are grouped into Workspaces, which are geared towards particular tasks (modeling, animating and so on).</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_areas_borders.png">
+    <p>Resizing</p>
+    <p>Areas can be resized by dragging their borders with LMB. Move the cursor over the border between two areas so that the cursor changes to a double-headed arrow, then click and drag.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_areas_resize.png">
+    <p>Hold Ctrl to snap the size of areas to convenient sizes.</p>
+    <p>Hold Shift to move nearby aligned borders together while resizing.</p>
+    <p>Docking</p>
+    <p>Docking describes several ways an area a user can interactively manipulate the size and location of areas along with splitting an area into new areas.</p>
+    <p>To start the interactive process, placing the mouse cursor in an area corner will change the cursor to a cross (+). Once the cursor is a cross, press and hold LMB to perform any of the following actions:</p>
+    <p>If you press Esc or RMB before releasing the mouse, the operation will be canceled.</p>
+    <p>Joining</p>
+    <p>Properties is being joined to the Outliner.</p>
+    <p>Dragging from an area corner into the space of a second area will join two areas. The areas that will be joined will be displayed brighter.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_areas_join.png">
+    <p>Splitting</p>
+    <p>Splitting an area will create a new area. Dragging from an area corner left/right will split the area vertically, to split the area horizontally drag up/down.</p>
+    <p>You can split and join areas at once by dragging a split operation into a separate area.</p>
+    <p>Dragging an area into the middle of a second area will replace the second area with the first area.</p>
+    <img src="Dragging an area into the middle of a second area will replace the second area with the first area.">
+    <p>Area Options</p>
+    <p>RMB on the border opens the Area Options.</p>
+    <p>Vertical/Horizontal Split</p>
+    <p>Shows an indicator line that lets you select the area and position where to split. Tab switches between vertical/horizontal.</p>
+    <p>Join Up/Down/Left/Right</p>
+    <p>Shows the join direction overlay.</p>
+    <p>Swap Areas</p>
+    <p>Swaps this area with the adjacent one.</p>
+    <p>Swapping Contents</p>
+    <p>You can swap the contents of two areas by pressing Ctrl-LMB on one of the corners of the initial area, dragging towards the target area, and releasing the mouse there. The two areas do not need to be side-by-side, though they must be inside the same window.</p>
     <p></p>
     <p></p>
     <p></p>
     <p></p>
     <p></p>
     <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
