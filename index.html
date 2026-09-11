@@ -245,18 +245,134 @@
     <p>Swaps this area with the adjacent one.</p>
     <p>Swapping Contents</p>
     <p>You can swap the contents of two areas by pressing Ctrl-LMB on one of the corners of the initial area, dragging towards the target area, and releasing the mouse there. The two areas do not need to be side-by-side, though they must be inside the same window.</p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    
+    <h2>Defaults</h2>
+    <p>When you start Blender for the first time or update to a new version, the interactive region of the Splash Screen is replaced with a few initial preferences to configure how you interact with Blender.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/getting-started_configuration_defaults_preferences.png">
+    <p>Import Preferences From Previous Version</p>
+    <p>Selecting this option will copy preferences from an older version of Blender. Doing so will copy preferences and startup files from the previous version of Blender and load them. This will include installed add-ons and extensions.</p>
+    <p>The preferences need to be imported from previous versions because the configuration files of each Blender version are stored in separate folders. Refer to the Blender’s Directory Layout page for the location of these folders.</p>
+    <p>If you would like to start fresh with the new version, continue to Create New Preferences.</p>
+    <p>Create New Preferences</p>
+    <p>Language</p>
+    <p>The language used in the user interface. The list is broken up into categories determining how complete the translations are. More language preferences can be set in the Translation Preferences.</p>
+    <p>Theme</p>
+    <p>Choose between a light or dark theme for Blender. Themes can be customized more in the Preferences. Additional themes can be installed by visiting the Blender Extensions Platform. This is optional, and will require internet access.</p>
+    <p>Keymap</p>
+    <p>Presets for the default keymap for Blender. Note that this manual assumes that you use the default “Blender” keymap.</p>
+    <p>Blender:</p>
+    <p>This is the default keymap. Read more about this keymap here.</p>
+    <p>Blender 2.7x:</p>
+    <p>This keymap is intended to match an older series of Blender versions and is designed for people upgrading who do not want to learn the updated keymap.</p>
+    <p>Industry Compatible:</p>
+    <p>This keymap is intended to match common commercial creation software and is intended for people who use many different such applications. Read more about this keymap here.</p>
+    <p>Mouse Select</p>
+    <p>Controls which mouse button, either right or left, is used to select items in Blender. The default is for selection to use the left button.</p>
+    <p>Spacebar Action</p>
+    <p>Controls the action of Spacebar. These and other shortcuts can be modified in the keymap preferences.</p>
+    <p>Play:</p>
+    <p>Starts/stops animation playback. This option is good for animation or video editing work.</p>
+    <p>Tools:</p>
+    <p>Opens the Toolbar underneath the cursor to quickly change the active tool. This option is good if doing a lot of modeling or rigging.</p>
+    <p>Search:</p>
+    <p>Opens up the Menu Search. This option is good for someone who is new to Blender and is unfamiliar with its menus and shortcuts.</p>
+    <p>Save New Preferences</p>
+    <p>Saves the preferences set above and opens the regular Splash Screen.</p>
+    <p>Saving Defaults</p>
+    <p>The preferences are automatically saved when changed. This behavior can be changed by following the instructions under Auto-Save Preferences</p>
+    <p>Changing the default startup file can be done via File ‣ Defaults ‣ Save Startup File. See Startup File.</p>
+    <p>There are two areas where Blender’s defaults are stored:</p>
+    <p>Preferences</p>
+    <p>The Preferences file stores keymap, add-ons theme and other options.</p>
+    <p>Startup File</p>
+    <p>The Startup File stores the scene and UI setup which are displayed at startup and when creating a new file (File ‣ New).
+    </p>
+    <p>Loading Factory Settings</p>
+    <p>You can revert your customizations to Blender’s defaults:</p>
+    <p>Preferences</p>
+    <p>The Preferences Load Factory Settings.
+    </p>
+    <p>Startup File & Preferences</p>
+    <p>File ‣ Defaults ‣ Load Factory Settings.</p>
+    <h2>Add-ons</h2>
+    <p>The Add-ons section lets you manage secondary scripts, called “Add-ons” that extend Blender’s functionality. Most of the time you can get add-ons as part of the Extensions system.</p>
+    <p>In this section you can search, install, enable and disable Add-ons.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/editors_preferences_section_addons.webp">
+    <p>Filtering Add-ons</p>
+    <p>Search Add-ons</p>
+    <p>Blender comes with some preinstalled Add-ons already, ready to be enabled. But you can also add your own, or any interesting ones you find on the web.</p>
+    <p>Enabled Add-ons Only</p>
+    <p>Shows only enabled add-ons for the current Category.</p>
+    <p>Add-on Tags</p>
+    <p>Add-ons are assigned categories by what areas of Blender they affect.</p>
+    <p>Add-on Settings</p>
+    <p>Refresh Local</p>
+    <p>Scan extension & legacy add-ons for changes to modules & meta-data (similar to restarting). Any issues are reported as warnings.</p>
+    <p>Install from Disk</p>
+    <p>Install an extension from a .zip package. This is installed to a Local Repository and no updates will be available.</p>
+    <p>This can also be used to install legacy Add-ons, for more information see: Installing Legacy Add-ons.</p>
+    <p>Enabling & Disabling Add-ons</p>
+    <p>To enable or disable an add-on check or uncheck the box to the right of the add-ons.</p>
+    <p>The add-on functionality should be immediately available.</p>
+    <p>Add-on Information</p>
+    <p>You can click the arrow at the left of the add-on box to see more information, such as its location, a description and a link to the documentation. Here you can also find a button to report a bug specific of this add-on.</p>
+    <p>Add-on Preferences</p>
+    <p>Some add-ons may have their own preferences which can be found in the Preferences section of the add-on information box.</p>
+    <p>Some add-ons use this section for example to enable/disable certain functions of the add-on. Sometimes these might even all default to off. So it is important to check if the enabled add-on has any particular preferences.</p>
+    <p>Installing Legacy Add-ons</p>
+    <p>To install legacy add-ons, click the Install from Disk menu item and select the add-on’s .py file (if it has only one such file) or its .zip file.</p>
+    <p>The add-on will not be automatically enabled after installation; click the checkbox to do that.</p>
+    <p>Refresh</p>
+    <p>Scans the Add-on Directory for new add-ons.</p>
+    <h2>Scripting & Security</h2>
+    <p>The ability to include Python scripts within blend-files is valuable for advanced tasks such as rigging and automation. However, it poses a security risk since Python does not restrict what a script can do. Therefore, you should only run scripts from sources you know and trust. Automatic execution is disabled by default; however, some blend-files need this to function properly.</p>
+    <p>When a blend-file tries to execute a script and is not allowed, a dialog will appear. In it, you can choose to Allow Execution or to Ignore the scripts.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/advanced_scripting_security_autorun-scripts-dialog.png">
+    <p>Scripts in Blend-Files</p>
+    <p>Auto Execution</p>
+    <p>Here are the different ways blend-files may automatically run scripts.</p>
+    <p>Registered Text-Blocks</p>
+    <p>A text data-block can have its Register option enabled which means it will load on start.</p>
+    <p>Animation Drivers</p>
+    <p>Python expressions can be used to Drive values and are often used in more advanced rigs and animations.</p>
+    <p>Manual Execution</p>
+    <p>There are other ways scripts in a blend-file may execute that require user interaction (therefore will run even when auto execution is off), but you should be aware that this is the case since it is not necessarily obvious.</p>
+    <p>Running a script in the Text editor.</p>
+    <p>Rendering with Freestyle, because Freestyle uses scripts to control line styles.</p>
+    <p>Controlling Script Execution</p>
+    <p>Blender provides a number of ways to control whether scripts from a blend-file are allowed to automatically execute.</p>
+    <p>First, the File Browser has the option Trusted Source which you can use on a case-by-case basis to control auto execution. Since you may forget to set this, or may open a file without going through the File Browser, you can change the default (described next).</p>
+    <p>Setting Defaults</p>
+    <p>In the Preferences, there is the toggle to Auto Run Python Scripts. This means the Trusted Source option in the File Browser will be enabled by default, and scripts can run when blend-files are loaded without using the File Browser. Once enabled you have the option to exclude certain directories; a typical configuration would be to trust all paths except for the download directory.</p>
+    <img src="https://docs.blender.org/manual/en/latest/_images/animation_drivers_troubleshooting_autorun-user-preference.png">
+    <p>Command Line</p>
+    <p>You may want to perform batch rendering or some other task from the command line, running Blender without an interface. In this case, the Preferences are still used but you may want to override them:</p>
+    <p>Enable with -y or --enable-autoexec</p>
+    <p>Disable with -Y or --disable-autoexec</p>
+    <p>Example</p>
+    <p>To render an animation in background mode, allowing drivers and other scripts to run:</p>
+    <p>blender --background --enable-autoexec my_movie.blend --render-anim</p>
+    <h2>Recovering Data</h2>
+    <p>Computer crashes, power outages, or simply forgetting to save can result in the loss or corruption of your work. You can use Blender’s Auto Save feature to reduce the chance of losing files when such events occur.</p>
+    <p>There are three options to help prevent accidental data loss:</p>
+    <p>Save Prompt prompts you to save unsaved changes on exit</p>
+    <p>Save Versions saves additional copies of your blend file with a number appended to the extension</p>
+    <p>Auto Save saves your file automatically every few minutes (by default, every 2 minutes)</p>
+    <p>Recovering Save Versions</p>
+    <p>By default Blender keeps an additional backup when saving files. So saving renames the previously saved file with a .blend1 extension instead of overwriting it.</p>
+    <p>This file can be used to revert to a previous state.</p>
+    <p>See Save Versions to configure the number of versions kept.</p>
+    <p>Recovering The Last Session</p>
+    <p>The Recover Last Session will open the quit.blend file that is saved into the Temporary Directory when you quit Blender under normal operation (see Blender Session). Note that files in your temporary directory may be deleted when you reboot your computer (depending on your system configuration) or by scheduled disk cleanup tools or scripts.</p>
+    <p>Recovering an Auto Save</p>
+    <p>Blender automatically saves temporary backups of your work at regular intervals. If Blender crashes or you close it without saving, you may be able to recover your work using the autosave.</p>
+    <p>Follow these steps to recover an autosave:
+    </p>
+    <p>Open Blender.</p>
+    <p>Go to the top-left menu bar and select: File –> Recover –> Auto Save.</p>
+    <p>In the file browser that appears, find the desired auto save. The files are named like: <filename>_autosave.blend Note, these files are timestamped to help identify the correct one.</p>
+    <p>Select the autosave file and click Open.</p>
+    <p>Once opened, immediately save the file manually using Save As to avoid overwriting the autosave.</p>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
-
